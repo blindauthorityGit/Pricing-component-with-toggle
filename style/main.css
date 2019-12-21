@@ -1,0 +1,384 @@
+h2 {
+  color: #686988;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 48px;
+  font-size: 2em;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.main {
+  background: #f6f6fe;
+  max-width: 1050px;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.wrapperMain {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 85px;
+}
+
+.left,
+.right {
+  background: white;
+  -webkit-box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.middle {
+  background: -webkit-gradient(linear, left top, right top, from(#a2a5f2), color-stop(80%, #8389e7));
+  background: linear-gradient(90deg, #a2a5f2 0%, #8389e7 80%);
+  z-index: 99;
+  margin: -20px 0;
+  color: white;
+}
+
+.middle .specs,
+.middle .priceH,
+.middle .dollar,
+.middle .top {
+  color: white !important;
+}
+
+.box {
+  border-radius: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  padding: 40px 0 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.box hr {
+  width: 80%;
+  border: solid thin #dbdbdb;
+}
+
+.box #priceTwoAnnual {
+  display: none;
+  position: absolute;
+  top: 120px;
+}
+
+.box #priceOneAnnual,
+.box #priceThreeAnnual {
+  display: none;
+  position: absolute;
+  top: 100px;
+}
+
+.box .top {
+  margin-bottom: 40px;
+  color: #686988;
+  font-weight: 700;
+  text-align: center;
+}
+
+.box .price {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.box .dollar {
+  font-size: 2em;
+  color: #4a4d60;
+  font-weight: 700;
+  margin-right: 0.25em;
+}
+
+.box .priceH {
+  font-size: 4em;
+  color: #4a4d60;
+  font-weight: 700;
+}
+
+.box .specs {
+  font-weight: 700;
+  padding: 20px 0;
+  color: #686988;
+}
+
+.toggle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toggle span {
+  color: #b3b5c6;
+  font-weight: 700;
+}
+
+.toggler {
+  height: 33px;
+  width: 55px;
+  display: inline-block;
+  border-radius: 55px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#a2a5f2), color-stop(80%, #8389e7));
+  background: linear-gradient(90deg, #a2a5f2 0%, #8389e7 80%);
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.toggler:hover {
+  background: #a2a5f2;
+}
+
+.toggler .inner {
+  background: white;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  -webkit-transform: translate(25px, 0);
+          transform: translate(25px, 0);
+  -webkit-transition: ease 50ms transform;
+  transition: ease 50ms transform;
+}
+
+.leftToggle {
+  -webkit-transform: translate(5px, 0) !important;
+          transform: translate(5px, 0) !important;
+  -webkit-transition: ease 50ms transform;
+  transition: ease 50ms transform;
+}
+
+.active {
+  color: #4a4d60;
+}
+
+.button {
+  margin: 32px 0;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 18px 0;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.lR {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#a2a5f2), color-stop(80%, #8389e7));
+  background: linear-gradient(90deg, #a2a5f2 0%, #8389e7 80%);
+  border: solid thin white;
+}
+
+.lR:hover {
+  background: white;
+  color: #686988;
+  border: solid thin #686988;
+}
+
+.mdL {
+  color: #686988;
+  background: white;
+  border: solid thin #a2a5f2;
+}
+
+.mdL:hover {
+  color: white;
+  background: none;
+  border: solid thin white;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-12-21 0:6:48
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation slide-out-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-out
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.slide-out-left {
+  -webkit-animation: slide-out-left 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-out-left 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.scale-out-center {
+  -webkit-animation: scale-out-center 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: scale-out-center 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.fade-out {
+  -webkit-animation: fade-out 0.2s ease-out both;
+  animation: fade-out 0.2s ease-out both;
+}
+/*# sourceMappingURL=main.css.map */

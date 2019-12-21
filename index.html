@@ -1,52 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Our Pricing
-  Annually
-  Monthly
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <div class="wrapper">
+        <div class="head">
+          <h2>Our Pricing</h2>
+          <div class="toggle">
+            <span class="active" id="active">Annualy</span>
+            <div class="toggler" id="toggle">
+              <div class="inner" id="innerCircle"></div>
+            </div>
+            <span>Monthly</span>
+          </div>
+        </div>
+        <div class="wrapperMain">
+          <div class="box left">
+            <span class="top">Basic</span>
+            <div class="price" id="priceOne">
+              <span class="dollar">$</span>
+              <span class="priceH">19.99</span>
+            </div>
+            <div class="price" id="priceOneAnnual">
+              <span class="dollar">$</span>
+              <span class="priceH">199.99</span>
+            </div>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+            <hr />
+            <div class="specs">500 GB Storage</div>
+            <hr />
+            <div class="specs">2 Users Allowed</div>
+            <hr />
+            <div class="specs">Send up to 3 GB</div>
+            <hr />
+            <div class="button lR">
+              LEARN MORE
+            </div>
+          </div>
+          <div class="box middle">
+            <span class="top">Professional</span>
+            <div class="price" id="priceTwo">
+              <span class="dollar">$</span>
+              <span class="priceH">24.99</span>
+            </div>
+            <div class="price" id="priceTwoAnnual">
+              <span class="dollar">$</span>
+              <span class="priceH">249.99</span>
+            </div>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+            <hr />
+            <div class="specs">1 TB Storage</div>
+            <hr />
+            <div class="specs">5 Users Allowed</div>
+            <hr />
+            <div class="specs">Send up to 10 GB</div>
+            <hr />
+            <div class="button mdL">
+              LEARN MORE
+            </div>
+          </div>
+          <div class="box right">
+            <span class="top">Master</span>
+            <div class="price" id="priceThree">
+              <span class="dollar">$</span>
+              <span class="priceH">39.99</span>
+            </div>
+            <div class="price" id="priceThreeAnnual">
+              <span class="dollar">$</span>
+              <span class="priceH">399.99</span>
+            </div>
+            <hr />
+            <div class="specs">2 TB Storage</div>
+            <hr />
+            <div class="specs">10 Users Allowed</div>
+            <hr />
+            <div class="specs">Send up to 20 GB</div>
+            <hr />
+            <div class="button lR">
+              LEARN MORE
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+  <script src="./js/app.js"></script>
 </html>
