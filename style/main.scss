@@ -26,11 +26,47 @@ body {
   font-size: 15px;
 }
 
+body {
+  background: $bg-color;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+// BACKGROUND
+
+.bgR {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  /* background: red; */
+  z-index: -1;
+  background-image: url(../images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.bgL {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  /* background: red; */
+  z-index: -1;
+  background-image: url(../images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+
 // SECTIONS
 
 .main {
-  background: $bg-color;
-  max-width: 1050px;
+  max-width: 1440px;
+  min-width: 1040px;
+  margin: auto;
+  margin-top: 5em;
 }
 
 .head {
@@ -133,6 +169,10 @@ body {
   }
 }
 
+.attribution {
+  margin-top: 3em;
+}
+
 // TOGGLE
 
 .toggle {
@@ -180,6 +220,18 @@ body {
 }
 
 .active {
+  color: $primary-color !important;
+}
+
+.activeTwo {
+  color: $primary-color !important;
+}
+
+.inactive {
+  color: $light-hrey !important;
+}
+
+#monthly {
   color: $primary-color;
 }
 
@@ -194,6 +246,7 @@ body {
   padding: 18px 0;
   font-weight: 700;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .lR {
@@ -351,6 +404,12 @@ body {
 }
 
 .fade-out {
-  -webkit-animation: fade-out 0.2s ease-out both;
-  animation: fade-out 0.2s ease-out both;
+  -webkit-animation: fade-out 0.1s ease-out both;
+  animation: fade-out 0.1s ease-out both;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  display: flex !important;
 }
